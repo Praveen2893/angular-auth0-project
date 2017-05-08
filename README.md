@@ -2,4 +2,4 @@
 
 Simple Angular authentication App with Auth0
 
-Supprts gmail authentication
+Supports gmail authentication
