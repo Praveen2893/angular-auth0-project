@@ -1,0 +1,23 @@
+<md-toolbar>
+	<div class="md-toolbar-tools">
+		<h2><span>Angular Auth</span></h2>
+		<span flex></span>
+
+		<md-button
+		 	ng-click = "toolbar.login()"
+		 	ng-if="!toolbar.auth.isAuthenticated">
+		 	Login
+		</md-button>
+		<md-button
+			ng-if="toolbar.auth.isAuthenticated"
+			ui-sref="profile">
+			Profile
+		</md-button>
+		<md-button 
+			ng-click = "toolbar.logout()"
+			ng-if="toolbar.auth.isAuthenticated">
+			Logout
+		</md-button>
+	</div>
+
+</md-toolbar>
